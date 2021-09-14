@@ -15,10 +15,25 @@ $allCategoriesBgColor: #f8f8f8;
   margin: 0;
   font-weight: 600;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff4f04;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+  background: #000 !important;
 }
 // navigation
 .navigation {
@@ -129,7 +144,7 @@ body {
     .side2 {
       margin-left: 64px;
       img {
-        width: 108.9%;
+        width: 578px;
       }
     }
   }
@@ -404,6 +419,48 @@ body {
               font-weight: 700;
             }
           }
+        }
+      }
+    }
+  }
+}
+// foooter
+.footer {
+  padding: 70px 0 70px;
+  .col-md-6 {
+    .brandLogo {
+      .brandText {
+        width: 75%;
+        color: #302f2f;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }
+  .col-md-4 {
+    display: flex;
+    .products {
+      margin: 0 40px;
+      padding: 0;
+      .theme {
+        padding-bottom: 5px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: 0;
+        font-size: 17px;
+      }
+      .sampleText {
+        width: 180%;
+      }
+      li {
+        list-style: none;
+        font-size: 15px;
+        width: 130%;
+        margin: 15px 0;
+        font-family: "Roboto", sans-serif;
+        a {
+          color: #302f2f;
+          text-decoration: none;
         }
       }
     }

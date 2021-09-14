@@ -7,6 +7,7 @@ import SmartWatches from "./Recommendation/SmartWatches";
 import Advertisement from "./Ads/Advertisement";
 import NewCollection from "./NewCollection/NewCollection";
 import Trending from "./Trend/Trending";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Advertisement />
       <Trending />
       <Advertisement />
+      <Footer />
     </div>
   );
 }
