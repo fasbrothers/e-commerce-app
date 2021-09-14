@@ -3,7 +3,7 @@ import SmartWatch from "../JSON/smartWatches.json";
 
 function SmartWatches() {
   return (
-    <div className='smartwatch'>
+    <div className="smartwatch">
       <div className="titles">
         <p>Explore Awesome Products</p>
         <h4>Recommended For You</h4>
@@ -11,8 +11,8 @@ function SmartWatches() {
       <div className="cards">
         {SmartWatch.map((post) => {
           return (
-            <div className="productCard">
-              <img src={post.img} />
+            <div className="productCard" key={post.id}>
+              <img src={post.img} alt="infoBrand" />
               <p>{post.name}</p>
               <div className="price">{post.price}</div>
             </div>

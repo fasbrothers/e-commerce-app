@@ -9,11 +9,11 @@ function Trending() {
         <p>TOP PRODUCTS</p>
         <h4>TRENDING THIS WEEK</h4>
       </div>
-      <Container className='trendingCards'>
+      <Container className="trendingCards">
         <Row>
           {Trend.map((post) => {
             return (
-              <Col md="3">
+              <Col md="3" key={post.id}>
                 <Card>
                   <CardHeader>
                     <img src={post.img} alt="shoess" />
