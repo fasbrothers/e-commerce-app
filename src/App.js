@@ -5,6 +5,7 @@ import Nav from "./HomePage/Nav";
 import "./styles/main.scss";
 import SmartWatches from "./Recommendation/SmartWatches";
 import Advertisement from "./Ads/Advertisement";
+import NewCollection from "./NewCollection/NewCollection";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <CategoriesSec />
       <Home />
       <SmartWatches />
+      <Advertisement />
+      <NewCollection />
       <Advertisement />
     </div>
   );

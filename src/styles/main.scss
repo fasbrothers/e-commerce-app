@@ -1,4 +1,5 @@
 $allCategoriesBgColor: #f8f8f8;
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
@@ -211,6 +212,123 @@ body {
         text-decoration: none;
         color: #fff;
         font-weight: 500;
+      }
+    }
+  }
+}
+// new collection
+
+.newCollect {
+  .container {
+    .row {
+      .page {
+        text-align: center;
+        padding: 50px 0 20px 0;
+        h4 {
+          margin: 0;
+          font-weight: 600;
+          color: #000;
+          text-transform: uppercase;
+          font-family: "Roboto", sans-serif;
+        }
+        p {
+          color: #302f2f;
+          font-family: "Roboto", sans-sarif;
+          margin: 0;
+        }
+      }
+      .cardArea {
+        .cards {
+          .card {
+            background-color: #f5f5f5;
+            border: none;
+            border-radius: 10px;
+            margin: 5px;
+            .card-body {
+              padding: 0;
+              img {
+                width: 100%;
+              }
+            }
+            .card-footer {
+              background-color: transparent;
+              border-top: none;
+              .texts {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  font-weight: 600;
+                  font-family: "Roboto", sans-sarif;
+                  font-size: 17px;
+                }
+                span {
+                  background-color: #fff;
+                  padding: 5px 10px;
+                  border-radius: 20px;
+                  color: #ff4f04;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+      .col-lg-6 {
+        .card {
+          background-color: #f5f5f5;
+          border: none;
+          border-radius: 10px;
+          .card-body {
+            .productPrice {
+              display: flex;
+              justify-content: space-between;
+              span {
+                padding: 5px 15px;
+                color: white;
+                background: #000;
+                font-weight: 600;
+                font-family: "Roboto", sans-serif;
+                border-radius: 20px;
+                &:nth-child(2) {
+                  background-color: #fff;
+                  padding: 5px 10px;
+                  border-radius: 20px;
+                  color: #ff4f04;
+                  font-weight: 700;
+                }
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .cardFooter {
+            padding: 0 30px;
+            background-color: transparent;
+            border-top: none;
+            h4 {
+              font-weight: 600;
+              font-family: "Roboto", sans-serif;
+            }
+            p {
+              color: #7a7a7a;
+            }
+          }
+        }
+      }
+      .btnArea {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        a {
+          border: 1px solid #707070;
+          padding: 20px 30px;
+          border-radius: 5px;
+          text-decoration: none;
+          color: #302f2f;
+          font-weight: 500;
+        }
       }
     }
   }
