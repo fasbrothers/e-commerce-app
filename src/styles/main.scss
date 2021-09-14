@@ -1,0 +1,217 @@
+$allCategoriesBgColor: #f8f8f8;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+// navigation
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 75px 20px 70px;
+  .searchSec {
+    margin-right: 15px;
+    form {
+      position: relative;
+      .searchInput {
+        padding: 5px;
+        width: 560px;
+        border-radius: 5px;
+        border: 1px solid #808080;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .searchBtn {
+        position: absolute;
+        right: 3%;
+        top: 10%;
+        background-color: transparent !important;
+        border: none;
+      }
+    }
+  }
+  .icons {
+    .sections {
+      margin: 12px;
+      color: rgb(36, 33, 33);
+    }
+  }
+}
+// categories
+.categories {
+  padding: 10px 75px 10px 75px;
+  border-top: 1.3px solid #dfdfdf;
+  display: flex;
+  justify-content: space-between;
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    background-color: $allCategoriesBgColor;
+    color: #000;
+    border: none;
+    .menuIcon {
+      margin-right: 10px;
+    }
+    &::after {
+      margin-left: 50px;
+    }
+  }
+  .links {
+    display: flex;
+    .linkItem {
+      list-style: none;
+      margin: 0 25px;
+      .link {
+        text-decoration: none;
+        color: #403f3f;
+      }
+      .active {
+        color: #ff5d18;
+      }
+    }
+  }
+}
+// home
+.home {
+  background: url("../HomePage/home\ bg.jpg");
+  background-size: cover;
+  height: 32rem;
+  .main {
+    display: flex;
+    .side1 {
+      margin: 175px 75px auto;
+      h3 {
+        font-size: 50px;
+        color: #fff;
+        font-family: "Open-sans", sans-serif;
+      }
+      p {
+        font-family: "Open-sans", sans-serif;
+        color: #fff;
+        margin-bottom: 40px;
+      }
+      .buttons {
+        a {
+          background-color: #ff4f04;
+          padding: 15px 20px;
+          text-decoration: none;
+          color: white;
+          border-radius: 5px;
+          svg {
+            margin-left: 10px;
+          }
+          &:nth-child(2) {
+            background-color: #5a5a5a54;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .side2 {
+      margin-left: 64px;
+      img {
+        width: 108.9%;
+      }
+    }
+  }
+}
+// smartwatch
+.smartwatch {
+  padding: 50px 0 50px;
+  background-color: #f8f8f8;
+  .titles {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    color: #302f2f;
+    font-family: "Roboto", sans-sarif;
+    margin: 0;
+  }
+  h4 {
+    color: #111;
+    font-family: "Roboto", sans-sarif;
+    margin: 0;
+    font-weight: 600;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    .productCard {
+      padding: 30px 15px;
+      img {
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .price {
+        background-color: #f4e4de;
+        width: 60px;
+        height: 40px;
+        border-radius: 50px;
+        padding: 8px 13px;
+        transform: translate(100px, 0);
+        color: #ff4f04;
+        font-weight: 500;
+      }
+    }
+  }
+  .btn-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .exploreBtn {
+      border: 1px solid #707070;
+      padding: 20px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #302f2f;
+      font-weight: 500;
+    }
+  }
+}
+// advertisement
+.ads {
+  background-image: url("../images//sale\ bg.jpg");
+  height: 15.5rem;
+  background-size: cover;
+  .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: #fff;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      width: 55%;
+      font-size: 40px;
+      text-transform: uppercase;
+      padding: 65px 50px 0 50px;
+    }
+    .shopping {
+      margin-right: 100px;
+      margin-top: 50px;
+      a {
+        border: 1px solid #fff;
+        padding: 20px 70px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+      }
+    }
+  }
+}
