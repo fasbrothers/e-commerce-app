@@ -10,7 +10,7 @@ function NewCollection() {
     <div className="newCollect">
       <Container>
         <Row>
-          <Col md="12" className='page'>
+          <Col md="12" className="page">
             <p>Straight from Nike</p>
             <h4>New Collection</h4>
           </Col>
@@ -77,17 +77,19 @@ function NewCollection() {
                   <span>Sale -50%</span>
                   <span>$99</span>
                 </div>
-                <img src={sneakers2} alt="" />
+                <div className="image">
+                  <img src={sneakers2} alt="" />
+                </div>
               </CardBody>
-              <CardFooter className='cardFooter'>
+              <CardFooter className="cardFooter">
                 <h4 className="productName">Nike Air Force Shadow</h4>
                 <p className="productBrand">Brand: Nike</p>
               </CardFooter>
             </Card>
           </Col>
-        <Col md='12' className='btnArea'>
+          <Col md="12" className="btnArea">
             <a href="#">Explore Other Products</a>
-        </Col>
+          </Col>
         </Row>
       </Container>
     </div>

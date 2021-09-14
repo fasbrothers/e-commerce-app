@@ -6,6 +6,7 @@ import "./styles/main.scss";
 import SmartWatches from "./Recommendation/SmartWatches";
 import Advertisement from "./Ads/Advertisement";
 import NewCollection from "./NewCollection/NewCollection";
+import Trending from "./Trend/Trending";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <SmartWatches />
       <Advertisement />
       <NewCollection />
+      <Advertisement />
+      <Trending />
       <Advertisement />
     </div>
   );

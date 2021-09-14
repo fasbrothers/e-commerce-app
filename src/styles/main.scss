@@ -4,6 +4,17 @@ $allCategoriesBgColor: #f8f8f8;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+@mixin subTitle {
+  color: #302f2f;
+  font-family: "Roboto", sans-sarif;
+  margin: 0;
+}
+@mixin title {
+  color: #111;
+  font-family: "Roboto", sans-sarif;
+  margin: 0;
+  font-weight: 600;
+}
 body {
   margin: 0;
   padding: 0;
@@ -132,15 +143,10 @@ body {
     text-transform: uppercase;
   }
   p {
-    color: #302f2f;
-    font-family: "Roboto", sans-sarif;
-    margin: 0;
+    @include subTitle();
   }
   h4 {
-    color: #111;
-    font-family: "Roboto", sans-sarif;
-    margin: 0;
-    font-weight: 600;
+    @include title();
   }
   .cards {
     display: flex;
@@ -181,6 +187,11 @@ body {
       text-decoration: none;
       color: #302f2f;
       font-weight: 500;
+      transition: 0.5s ease;
+      &:hover {
+        background-color: #707070;
+        color: white;
+      }
     }
   }
 }
@@ -217,7 +228,6 @@ body {
   }
 }
 // new collection
-
 .newCollect {
   .container {
     .row {
@@ -225,16 +235,10 @@ body {
         text-align: center;
         padding: 50px 0 20px 0;
         h4 {
-          margin: 0;
-          font-weight: 600;
-          color: #000;
-          text-transform: uppercase;
-          font-family: "Roboto", sans-serif;
+          @include title();
         }
         p {
-          color: #302f2f;
-          font-family: "Roboto", sans-sarif;
-          margin: 0;
+          @include subTitle();
         }
       }
       .cardArea {
@@ -244,8 +248,13 @@ body {
             border: none;
             border-radius: 10px;
             margin: 5px;
+            overflow: hidden;
             .card-body {
               padding: 0;
+              transition: 0.5s ease;
+              &:hover {
+                transform: scale(1.2);
+              }
               img {
                 width: 100%;
               }
@@ -279,6 +288,10 @@ body {
           border: none;
           border-radius: 10px;
           .card-body {
+            transition: 0.5s ease;
+            &:hover {
+              transform: scale(0.95);
+            }
             .productPrice {
               display: flex;
               justify-content: space-between;
@@ -296,8 +309,10 @@ body {
                   color: #ff4f04;
                   font-weight: 700;
                 }
-                img {
-                  width: 100%;
+                .image {
+                  img {
+                    width: 100%;
+                  }
                 }
               }
             }
@@ -328,6 +343,67 @@ body {
           text-decoration: none;
           color: #302f2f;
           font-weight: 500;
+          transition: 0.5s ease;
+          &:hover {
+            background-color: #707070;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+// trending{
+.trending {
+  .pageTitles {
+    text-align: center;
+    padding: 80px 0 50px;
+    p {
+      @include subTitle();
+    }
+    h4 {
+      @include title();
+    }
+  }
+  .trendingCards {
+    .col-md-3 {
+      margin: 0 0 25px;
+      .card {
+        border: none;
+        cursor: pointer;
+        .card-header {
+          text-align: center;
+          overflow: hidden;
+          border-bottom: none;
+          border-radius: 10px;
+          img {
+            width: 100%;
+            transition: 0.5s ease;
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+        .card-body {
+          padding: 10px;
+          .infoTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .name {
+              margin: 0;
+              font-weight: 700;
+              font-family: "Roboto", sans-serif;
+            }
+            .price {
+              background-color: #fff0e9;
+              color: #ff4f04;
+              padding: 7px 20px;
+              font-family: "Roboto", sans-serif;
+              border-radius: 50px;
+              font-weight: 700;
+            }
+          }
         }
       }
     }
