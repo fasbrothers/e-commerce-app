@@ -8,7 +8,7 @@ const ResponsiveModal = () => {
   const toggle = () => setModal(!modal);
 
   return (
-    <div className='responsiveModal'>
+    <div className="responsiveModal">
       <Button onClick={toggle}>
         <SearchIcon />
       </Button>
