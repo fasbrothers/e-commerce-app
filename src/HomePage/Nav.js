@@ -4,6 +4,7 @@ import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
 import SearchIcon from "@material-ui/icons/Search";
+import ResponsiveModal from "./ResponsiveModal";
 
 function Nav() {
   return (
@@ -12,6 +13,7 @@ function Nav() {
         <a href="#" className="logo">
           <img src={navLogo} alt="logo" />
         </a>
+        <ResponsiveModal />
         <div className="searchSec">
           <form>
             <input

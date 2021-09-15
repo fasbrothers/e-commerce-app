@@ -1,0 +1,201 @@
+@mixin paddingSections {
+  padding: 30px 0 30px;
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    overflow-x: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .modal-body {
+        .searchSec {
+          form {
+            position: relative;
+            .searchInput {
+              padding: 5px;
+              width: 230px;
+              border-radius: 5px;
+              border: 1px solid #808080;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+            .searchBtn {
+              position: absolute;
+              right: 0;
+              top: 10%;
+              background-color: transparent !important;
+              border: none;
+            }
+          }
+        }
+      }
+      .navigation {
+        border-bottom: 1px solid #eee;
+        padding: 0 20px;
+        .searchSec {
+          display: none;
+        }
+        .icons {
+          display: none;
+        }
+        .responsiveModal {
+          button {
+            background-color: transparent;
+            color: #000 !important;
+            border: none;
+          }
+        }
+      }
+      .categories {
+        display: inline;
+        padding: 0;
+        #responsiveIcons {
+          display: block;
+          .icons {
+            margin: 0 10px 0 0;
+          }
+        }
+        .links {
+          display: flex;
+          padding: 10px 0;
+          flex-wrap: wrap;
+        }
+        .dropdown {
+          button {
+            display: flex;
+            margin: 15px 15px 0;
+          }
+          .dropdown-menu {
+            width: 67%;
+          }
+        }
+      }
+      .home {
+        height: 20rem;
+        background-position: center;
+        .main {
+          display: inline;
+          .side1 {
+            margin: 0;
+            padding: 60px 10px;
+            h3 {
+              font-size: 25px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .buttons {
+              .button1 {
+                padding: 7px 7px;
+                font-size: 15px;
+              }
+              .button2 {
+                padding: 7px;
+              }
+            }
+          }
+          .side2 {
+            display: none;
+          }
+        }
+      }
+      .smartwatch {
+        @include paddingSections();
+        .titles {
+          p {
+            font-size: 15px;
+          }
+          h4 {
+            font-size: 20px;
+          }
+        }
+        .cards {
+          display: inline-block;
+          .productCard {
+            padding: 10px 50px;
+            text-align: center;
+            img {
+              width: 85%;
+            }
+            .price {
+              transform: translate(80px, 0);
+            }
+          }
+        }
+        .btn-area {
+          .exploreBtn {
+            padding: 10px 15px;
+          }
+        }
+      }
+      .ads {
+        background-position: center;
+        height: 230px;
+        .contents {
+          display: inline-block;
+          padding: 30px;
+          p {
+            font-size: 21px;
+            width: 100%;
+            padding: 25px 20px 0 20px;
+            text-align: center;
+          }
+          .shopping {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            a {
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+      .newCollect {
+        @include paddingSections();
+        .cardArea {
+          .row {
+            .cards {
+              .card {
+                margin: 10px !important;
+                text-align: center;
+                .card-body {
+                  width: 90% !important;
+                }
+              }
+            }
+          }
+        }
+        .col-md-12 {
+          .card {
+            margin: 12px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .btnArea {
+          .exploreBtn {
+            padding: 10px 15px !important;
+          }
+        }
+      }
+      .trending {
+        padding: 0;
+      }
+      .footer {
+        @include paddingSections() .col-md-4 {
+          flex-wrap: wrap;
+          .products {
+            margin: 0 20px 0 0;
+            .sampleText {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+  }
+
+}

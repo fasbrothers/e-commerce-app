@@ -70,7 +70,7 @@ function NewCollection() {
               </Col>
             </Row>
           </Col>
-          <Col lg="6" md="6">
+          <Col lg="6" md="12" className="info">
             <Card>
               <CardBody>
                 <div className="productPrice">
@@ -88,7 +88,9 @@ function NewCollection() {
             </Card>
           </Col>
           <Col md="12" className="btnArea">
-            <a href="#">Explore Other Products</a>
+            <a href="#" className="exploreBtn">
+              Explore Other Products
+            </a>
           </Col>
         </Row>
       </Container>

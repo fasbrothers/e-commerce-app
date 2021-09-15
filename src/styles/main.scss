@@ -77,6 +77,9 @@ body {
   border-top: 1.3px solid #dfdfdf;
   display: flex;
   justify-content: space-between;
+  #responsiveIcons{
+    display: none;
+  }
   .dropdown-toggle {
     display: flex;
     align-items: center;
@@ -156,12 +159,12 @@ body {
   .titles {
     text-align: center;
     text-transform: uppercase;
-  }
-  p {
-    @include subTitle();
-  }
-  h4 {
-    @include title();
+    p {
+      @include subTitle();
+    }
+    h4 {
+      @include title();
+    }
   }
   .cards {
     display: flex;
@@ -297,7 +300,8 @@ body {
           }
         }
       }
-      .col-lg-6 {
+      .info {
+        display: block;
         .card {
           background-color: #f5f5f5;
           border: none;
